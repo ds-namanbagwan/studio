@@ -7,6 +7,14 @@
       "entityPageSet": {
         "plugin": {}
       }
+    },
+    {
+      "name": "test",
+      "streamId": "studio-stream-id",
+      "templateType": "JS",
+      "entityPageSet": {
+        "plugin": {}
+      }
     }
   ],
   "streams": [
@@ -28,6 +36,26 @@
         "c_price",
         "description",
         "photoGallery",
+        "slug"
+      ]
+    },
+    {
+      "$id": "studio-stream-id",
+      "localization": {
+        "locales": [
+          "en"
+        ],
+        "primary": false
+      },
+      "filter": {
+        "entityIds": [
+          "test"
+        ],
+        "entityTypes": [
+          "ce_product"
+        ]
+      },
+      "fields": [
         "slug"
       ]
     }
