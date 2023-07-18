@@ -21,7 +21,7 @@ export const initialProps: HeadlineProps = {
 
 const Headline = ({ value, textSize, fontWeight }: HeadlineProps) => {
   return (
-    <div className="mt-4">
+    <div className="mt-4 justify-center">
       <h1
         className={`text-${textSize} font-${fontWeight} tracking-tight text-gray-900`}
       >

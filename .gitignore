@@ -1,5 +1,4 @@
 node_modules/
-localData/
 sites-rendered-output/
 dist/
 .yext
@@ -7,4 +6,3 @@ dist/
 *.local
 
 .DS_Store
-

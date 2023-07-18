@@ -1,12 +1,14 @@
 import { GetPath, TemplateConfig, TemplateProps } from "@yext/pages";
 import GridContainer from "../components/GridContainer";
 import "../index.css";
+
 import HeaderSimple from "../components/HeaderSimple";
 import Headline from "../components/Headline";
 import HStack from "../components/HStack";
 import Item from "../components/Item";
 import ItemsGrid from "../components/ItemsGrid";
 import Label from "../components/Label";
+
 import BigButton from "../components/BigButton";
 import CenteredContainer from "../components/CenteredContainer";
 import PageLayout from "../components/PageLayout";
@@ -26,7 +28,7 @@ export const config: TemplateConfig = {
   },
 };
 export const getPath: GetPath<TemplateProps> = ({ document }) => {
-  return document.slug ?? document.entityId.toString();
+  return `index.html`;
 };
 
 export default function Product({ document }: TemplateProps) {
@@ -86,7 +88,7 @@ export default function Product({ document }: TemplateProps) {
             </ItemsGrid>
             <ProductTable
               title="Product Details"
-              rockerType="All Mountain Rocker – Smooth rocker at both tip and tail with camber underfoot provides balanced performance anywhere on the mountain."
+              rockerType="All Mountain Rocker😀 – Smooth rocker at both tip and tail with camber underfoot provides balanced performance anywhere on the mountain."
               shape="True Tip LT – By trimming the amount of heavy ABS plastic in the tip and extending the lightweight wood core into this area with a taper that further reduces weight, Nordica enhances playfulness and maneuverability of the ski without compromising that unmatchable feeling of powerful and control."
               core="Lite Performance Wood | Poplar / Beech"
               laminates="Carbon Chassis LT – A proprietary blend of carbon materials to reduce weight while maximizing performance."
